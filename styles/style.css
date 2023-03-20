@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: 80vw;
+  background: white;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px #5d4bb4;
+  overflow: hidden;
+}
+.faq .faq-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 -30rem;
+}
+.faq .faq-images .box-svg {
+  position: absolute;
+  transform: translate(-235px, 45px);
+  z-index: 99;
+  animation: float 2s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(-235px, 45px);
+  }
+  50% {
+    transform: translate(-235px, 35px);
+  }
+  100% {
+    transform: translate(-235px, 45px);
+  }
+}
+.faq .faq-images .main-images {
+  transform: translate(-85px, 0);
+}
+.faq .faq-images .main-images .background-svg > img {
+  width: 472px;
+  position: absolute;
+  scale: 2;
+  transform: translate(-115px, 0);
+  top: -118px;
+}
+.faq .faq-images .main-images .main-img > img {
+  position: relative;
+}
+.faq .accordion {
+  max-width: 35rem;
+  padding: 6rem 10vw 6rem 2rem;
+}
+.faq .accordion .accordion-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0 0 3rem 0;
+  color: hsl(238, 29%, 16%);
+}
+.faq .accordion .contentBox {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.faq .accordion .contentBox .question {
+  color: hsl(237, 12%, 33%);
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+.faq .accordion .contentBox .question:hover {
+  color: hsl(14, 88%, 65%);
+}
+.faq .accordion .contentBox .question::after {
+  content: url("../images/icon-arrow-down.svg");
+  position: relative;
+  transition: 0.3s;
+}
+.faq .accordion .contentBox .answers {
+  color: hsl(240, 6%, 50%);
+  font-size: 14px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.faq .accordion .contentBox.active .question::after {
+  transform: rotate(180deg);
+}
+.faq .accordion .contentBox.active .question {
+  font-weight: bold;
+  color: hsl(238, 29%, 16%);
+}
+.faq .accordion .contentBox.active .answers {
+  height: auto;
+  padding: 1rem 0 0 0;
+}
+.faq .accordion .divider {
+  width: 100%;
+  height: 1px;
+  background: hsl(240, 5%, 91%);
+}
+.faq .accordion .no-top-padding {
+  padding-top: 0;
+}
+
+@media (max-width: 990px) {
+  .faq .faq-images {
+    width: 40vw;
+  }
+  .faq .faq-images .box-svg {
+    transform: translate(-20vw, 215px);
+  }
+  @keyframes float {
+    0% {
+      transform: translate(-20vw, 215px);
+    }
+    50% {
+      transform: translate(-20vw, 225px);
+    }
+    100% {
+      transform: translate(-20vw, 215px);
+    }
+  }
+}
+@media (max-width: 690px) {
+  .faq {
+    grid-template-columns: 100%;
+    overflow: visible;
+  }
+  .faq .faq-images {
+    width: 100%;
+  }
+  .faq .faq-images .box-svg {
+    display: none;
+  }
+  .faq .faq-images .main-images {
+    transform: translateY(-30px);
+  }
+  .faq .faq-images .main-images .background-svg > img {
+    width: 250px;
+    position: absolute;
+    transform: translate(0, 0);
+    top: 120px;
+    scale: 1;
+  }
+  .faq .faq-images .main-images .main-img > img {
+    width: 250px;
+    animation: hover 2s infinite;
+  }
+  @keyframes hover {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .faq .accordion {
+    padding: 3rem 5vw;
+  }
+  .faq .accordion .accordion-title {
+    text-align: center;
+  }
+}
+@media (max-width: 432px) {
+  .faq .faq-images {
+    height: 110px;
+  }
+  .faq .faq-images .main-images {
+    padding: 30px 0 0 0;
+    transform: translateY(-83px);
+  }
+  .faq .faq-images .main-images .background-svg > img {
+    width: 220px;
+    top: 130px;
+  }
+  .faq .faq-images .main-images .main-img > img {
+    width: 220px;
+  }
+  .faq .accordion {
+    padding: 2rem 5vw 3rem 5vw;
+  }
+  .faq .accordion .accordion-title {
+    padding: 0px 0px 2rem;
+  }
+  .faq .accordion .question {
+    font-size: 14px;
+  }
+  .faq .accordion .answers {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
