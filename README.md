@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) - Edit after it has been pushed to github.
-- Live Site URL: [Add live site URL here](https://faqbyade.com) - Edit after it has been pushed to github.
+- Solution URL: (https://www.frontendmentor.io/solutions/faq-accordion-card-component-responsive-with-custom-animations-MIUbWPNcow)
+- Live Site URL: (https://faqbyade.vercel.app/)
 
 ## My process
 
@@ -64,6 +64,6 @@ In my next project I am going to be working with JSON which I am not that good a
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Adeola](https://adeolaweb.netlify.app/)
+- Frontend Mentor - [@adex-hub](https://www.frontendmentor.io/profile/adex-hub)
+- Twitter - [@Ade_the_great](https://www.twitter.com/Ade_the_great)
